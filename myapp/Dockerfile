@@ -1,10 +1,12 @@
-# 練習
+# 使用するイメージを指定
 FROM ruby:2.6.3
 ENV LANG C.UTF-8
 
+# -qq エラー以外は表示しない
 RUN apt-get update -qq && apt-get install -y \
     build-essential \
     nodejs \
+ # aptキャッシュをクリーンにし、 /var/lib/apt/lits を削除することで、イメージのサイズを減らす
  && rm -rf /var/lib/apt/lists/*
 
 RUN gem install bundler
