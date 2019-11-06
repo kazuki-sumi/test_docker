@@ -1,6 +1,12 @@
 dockerの練習用
+apt-get updateで参考になった
+http://karoten512.hatenablog.com/entry/2018/01/09/003330
 
+os関連
+https://teratail.com/questions/142866
 
+rm -rf /var/lib/apt/lists/* が何しているか
+http://karoten512.hatenablog.com/entry/2018/01/09/003330
 
 プログラマのためのDocker教科書 第2版
 ======================
